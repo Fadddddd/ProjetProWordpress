@@ -6,6 +6,8 @@
         'container' => false,
         'menu_class' => 'navbar-nav me-auto',
     ]) ?>
+
+
 </footer>
 <?php wp_footer(); ?>
 </body>

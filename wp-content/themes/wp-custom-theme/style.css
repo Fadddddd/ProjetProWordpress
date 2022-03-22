@@ -13,8 +13,12 @@ Description: Our default theme for 2022 is designed to take full advantage of th
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
 
 body {
-  background: #7ca4ca;
+  background: #f7f5f5;
   font-family: "Lexend", sans-serif;
+  padding: 32px;
+}
+.navbar {
+  background-color: rgb(138, 179, 206);
 }
 .image_logo {
   align-items: center;

@@ -11,7 +11,6 @@
 // Affichage d'un article sans la boucle
 if (have_posts()) : while (have_posts()) : the_post();
 ?>
-        <p>Ici la bannière</p>
         <h1><?php the_title(); ?></h1>
         <p>
             <img src="<?php the_post_thumbnail_url(); ?>" alt="" style="width:100%; height:auto;">
