@@ -5,7 +5,7 @@
 <?php
 get_header(); ?>
 <div class="container">
-    <h1>Contact :</h1>
+    <h2>Contact :</h2>
     <form class="needs-validation" novalidate>
         <div class="form-row">
             <div class="col-md-4 mb-3">

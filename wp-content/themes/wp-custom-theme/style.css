@@ -10,20 +10,20 @@ Author: Fadoua
 Tested up to: 5.4
 Description: Our default theme for 2022 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
 */
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap%22");
 
 body {
-  background: #f7f5f5;
-  font-family: "Lexend", sans-serif;
-  padding: 32px;
+  background: rgb(216, 220, 224);
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
 }
+
 .navbar {
-  background-color: rgb(138, 179, 206);
+  background: rgb(108, 141, 173);
+  margin-bottom: 40px;
 }
-.image_logo {
-  align-items: center;
-  justify-content: center;
-}
+
 img.alignright {
   float: right;
   margin: 0 0 1em 1em;
@@ -48,3 +48,7 @@ img.aligncenter {
   margin-left: auto;
   margin-right: auto;
 }
+h1 {
+  text-align: center;
+}
+
