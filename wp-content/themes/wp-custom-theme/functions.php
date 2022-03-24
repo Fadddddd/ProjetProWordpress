@@ -1,33 +1,34 @@
 <?php
 
 /**
+ * composer
+ */
 
- * composer */
 // chargement de l'autoloading de composer
 $autoloadphp = get_template_directory() . '/vendor/autoload.php';
 if (file_exists($autoloadphp))
     require $autoloadphp;
 
 /**
-
- * sécurité 
+ * sécurité
  */
+
 // désactive l'édition de fichier dans l'admin
 define('DISALLOW_FILE_EDIT', true);
 
 /**
+ * localisation
+ */
 
- * localisation 
- * */
 // choix du fuseau horaire
 date_default_timezone_set('Europe/Paris');
 // choix du réglage régional
 setlocale(LC_ALL, 'fr', 'fr_FR', 'fr_FR.utf8', 'fr_FR.ISO_8859-15');
 
 /**
-
- * CSS 
+ * CSS
  */
+
 // cette fonction se charge d'intégrer les feuilles de style du thème
 function my_theme_enqueue_styles()
 {
@@ -41,9 +42,10 @@ function my_theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 
 /**
-
- *JS 
+ * JS
  */
+
+
 // cette fonction se charge d'intégrer les scripts JS du thème
 function my_theme_enqueue_script()
 {
@@ -55,9 +57,10 @@ function my_theme_enqueue_script()
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_script');
 
 /**
-
- * fonctionnalités du thème 
+ * fonctionnalités du thème
  */
+
+
 function my_theme_menu_class($classes)
 {
     $classes[] = 'nav_item';
@@ -77,15 +80,16 @@ add_theme_support('title-tag');
 // activation de la fonctionnalité des vignettes
 add_theme_support('post-thumbnails');
 //activation de la fonctionnalité du menu
-add_theme_support('menus');
+//add_theme_support('menus');
 //activation de la fonctionnalité du logo
 add_theme_support('custom-logo');
+add_theme_support('automatic-feed-links'); //Enregistre la prise en charge du thème pour une fonctionnalité donnée. 
 
 register_nav_menu('header', 'En tête du menu');
 
 register_nav_menu('footer', 'Pied de page');
-//add_filter('document_title_separator', 'my_theme_title_separator');
-/* add_filter('document_title_parts', 'my_theme_document_title_parts'); */
+
+
 add_filter('nav_menu_css_class', 'my_theme_menu_class');
 
 add_filter('nav_menu_link_attributes', 'my_theme_menu_link_class');

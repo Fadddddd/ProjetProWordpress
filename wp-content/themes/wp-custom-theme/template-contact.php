@@ -1,9 +1,9 @@
 <?php
-
 /*
-*Template Name: Template Contact */ ?>
-<?php
-get_header(); ?>
+Template Name: Template Contact 
+*/
+get_header();
+?>
 <div class="container">
     <h2>Contact :</h2>
     <form class="needs-validation" novalidate>
@@ -57,9 +57,10 @@ get_header(); ?>
         <button class="btn btn-primary" type="submit">Envoyer</button>
     </form>
 </div>
+
 <script>
-    /*La fonction principale de ce script est d'empêcher l'envoi du formulaire si un champ a été mal rempli
-     *et d'appliquer les styles de validation aux différents éléments de formulaire*/
+    //La fonction principale de ce script est d'empêcher l'envoi du formulaire si un champ a été mal rempli 
+    //et d 'appliquer les styles de validation aux différents éléments de formulaire/
     (function() {
         'use strict';
         window.addEventListener('load', function() {
@@ -76,8 +77,6 @@ get_header(); ?>
         }, false);
     })();
 </script>
-</body>
 
-</html>
-
-<?php get_footer(); ?>
+<?php
+get_footer(); ?>

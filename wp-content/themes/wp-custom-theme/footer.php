@@ -1,15 +1,28 @@
 <footer>
-    <?php
-    //création menu footer
-    wp_nav_menu([
-        'theme_location' => 'footer',
-        'container' => false,
-        'menu_class' => 'navbar-nav me-auto',
-    ]) ?>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">Lernumerique</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <a class="footer" href="https://www.linkedin.com/in/eck-ines-8422993a/">LinkedIn</a>
-    <a class="footer" href="mailto:webmaster@example.com">Email</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <?php wp_nav_menu([
+                    'theme_location' => 'footer',
+                    'container' => false,
+                    'menu_class' => 'navbar-nav me-auto',
+                ]) ?>
+
+
+            </div>
+        </div>
+
+
+    </nav>
+
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 
