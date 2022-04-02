@@ -3,8 +3,10 @@
 /**
  * The base configuration for WordPress
  * ...
- * @package WordPress 
- */ ?>
+ * @package WordPress
+ */
+?>
+
 <?php
 
 get_header();

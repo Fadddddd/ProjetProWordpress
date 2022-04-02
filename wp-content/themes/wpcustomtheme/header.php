@@ -19,16 +19,15 @@
     <?php
     endif;
     ?>
-    <link rel="shortcut icon" type="image/png" href="<?= get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" />
+    <link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
-
-    <?php wp_link_pages(); ?>
     <!--création de la navbar-->
+    <?php wp_body_open(); ?>
+    <?php wp_link_pages(); ?>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="container-fluid">
             <!--<a class="navbar-brand" href="#">Lernumerique</a>-->
@@ -71,6 +70,6 @@
 
             </div>
         </div>
-        <?= get_search_form() ?>
+        <?php echo get_search_form() ?>
 
     </nav>

@@ -1,4 +1,5 @@
 === wp custom theme ===
+Contributors: Fadoua LNHI
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
